@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.2.1),
-    on November 04, 2021, at 10:41
+This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
+    on November 10, 2021, at 17:49
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2021.2.1'
+psychopyVersion = '2021.2.3'
 expName = 'untitled'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\ranwe\\OneDrive\\Desktop\\research\\Eating Observation Exp 2.0\\Eating Observation Exp 2.0\\Eating Observation Exp 2.0_lastrun.py',
+    originPath='C:\\Users\\ranwei\\Desktop\\Eating Observation Exp 2.0\\Eating Observation Exp 2.0_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -97,30 +97,30 @@ food = ["cake","sugar","doughnut","hamburger","chips","caramel","crisps","kebab"
 
 neutral = ["desk","ruler","scissors","envelops","files","monitor","blinds","memos","table","books"]
 
-all_list=[[['cake'], ['red', 'green', 'blue', 'black']],
-[['sugar'], ['red', 'green', 'blue', 'black']],
-[['doughnut'], ['red', 'green', 'blue', 'black']],
-[['hamburger'], ['red', 'green', 'blue', 'black']],
-[['chips'], ['red', 'green', 'blue', 'black']],
-[['caramel'], ['red', 'green', 'blue', 'black']],
-[['crisps'], ['red', 'green', 'blue', 'black']],
-[['kebab'], ['red', 'green', 'blue', 'black']],
-[['pizza'], ['red', 'green', 'blue', 'black']],
-[['cream'], ['red', 'green', 'blue', 'black']],
-[['desk'], ['red', 'green', 'blue', 'black']],
-[['ruler'], ['red', 'green', 'blue', 'black']],
-[['scissors'], ['red', 'green', 'blue', 'black']],
-[['envelops'], ['red', 'green', 'blue', 'black']],
-[['files'], ['red', 'green', 'blue', 'black']],
-[['monitor'], ['red', 'green', 'blue', 'black']],
-[['blinds'], ['red', 'green', 'blue', 'black']],
-[['memos'], ['red', 'green', 'blue', 'black']],
-[['table'], ['red', 'green', 'blue', 'black']],
-[['books'], ['red', 'green', 'blue', 'black']]]
+all_list=[[['cake'], ['red', 'green', 'deepskyblue', 'gold']],
+[['sugar'], ['red', 'green', 'deepskyblue', 'gold']],
+[['doughnut'], ['red', 'green', 'deepskyblue', 'gold']],
+[['hamburger'], ['red', 'green', 'deepskyblue', 'gold']],
+[['chips'], ['red', 'green', 'deepskyblue', 'gold']],
+[['caramel'], ['red', 'green', 'deepskyblue', 'gold']],
+[['crisps'], ['red', 'green', 'deepskyblue', 'gold']],
+[['kebab'], ['red', 'green', 'deepskyblue', 'gold']],
+[['pizza'], ['red', 'green', 'deepskyblue', 'gold']],
+[['cream'], ['red', 'green', 'deepskyblue', 'gold']],
+[['desk'], ['red', 'green', 'deepskyblue', 'gold']],
+[['ruler'], ['red', 'green', 'deepskyblue', 'gold']],
+[['scissors'], ['red', 'green', 'deepskyblue', 'gold']],
+[['envelops'], ['red', 'green', 'deepskyblue', 'gold']],
+[['files'], ['red', 'green', 'deepskyblue', 'gold']],
+[['monitor'], ['red', 'green', 'deepskyblue', 'gold']],
+[['blinds'], ['red', 'green', 'deepskyblue', 'gold']],
+[['memos'], ['red', 'green', 'deepskyblue', 'gold']],
+[['table'], ['red', 'green', 'deepskyblue', 'gold']],
+[['books'], ['red', 'green', 'deepskyblue', 'gold']]]
 
-color = ["red","blue", "green", "black" ]
+color = ["red","deepskyblue", "green", "gold" ]
 
-nTrial=80
+nTrial1=80
 
 #video
 videoA = ["resources/ECE_01.mp4", "resources/ECE_02.mp4", "resources/ECE_03.mp4", "resources/ECE_05.mp4", "resources/ECE_06.mp4", 
@@ -197,70 +197,70 @@ def create_condition_wd_clr_lst(lst1):
     return (word_lst, color_lst)
 
 #resources for conditions
-eo_wd_clr_lst1=[[['cake'], ['red', 'green', 'blue', 'black']],
-[['sugar'], ['red', 'green', 'blue', 'black']],
-[['doughnut'], ['red', 'green', 'blue', 'black']],
-[['hamburger'], ['red', 'green', 'blue', 'black']],
-[['chips'], ['red', 'green', 'blue', 'black']],
-[['caramel'], ['red', 'green', 'blue', 'black']],
-[['crisps'], ['red', 'green', 'blue', 'black']],
-[['kebab'], ['red', 'green', 'blue', 'black']],
-[['pizza'], ['red', 'green', 'blue', 'black']],
-[['cream'], ['red', 'green', 'blue', 'black']],
-[['desk'], ['red', 'green', 'blue', 'black']],
-[['ruler'], ['red', 'green', 'blue', 'black']],
-[['scissors'], ['red', 'green', 'blue', 'black']],
-[['envelops'], ['red', 'green', 'blue', 'black']],
-[['files'], ['red', 'green', 'blue', 'black']],
-[['monitor'], ['red', 'green', 'blue', 'black']],
-[['blinds'], ['red', 'green', 'blue', 'black']],
-[['memos'], ['red', 'green', 'blue', 'black']],
-[['table'], ['red', 'green', 'blue', 'black']],
-[['books'], ['red', 'green', 'blue', 'black']]]
+eo_wd_clr_lst1=[[['cake'], ['red', 'green', 'deepskyblue', 'gold']],
+[['sugar'], ['red', 'green', 'deepskyblue', 'gold']],
+[['doughnut'], ['red', 'green', 'deepskyblue', 'gold']],
+[['hamburger'], ['red', 'green', 'deepskyblue', 'gold']],
+[['chips'], ['red', 'green', 'deepskyblue', 'gold']],
+[['caramel'], ['red', 'green', 'deepskyblue', 'gold']],
+[['crisps'], ['red', 'green', 'deepskyblue', 'gold']],
+[['kebab'], ['red', 'green', 'deepskyblue', 'gold']],
+[['pizza'], ['red', 'green', 'deepskyblue', 'gold']],
+[['cream'], ['red', 'green', 'deepskyblue', 'gold']],
+[['desk'], ['red', 'green', 'deepskyblue', 'gold']],
+[['ruler'], ['red', 'green', 'deepskyblue', 'gold']],
+[['scissors'], ['red', 'green', 'deepskyblue', 'gold']],
+[['envelops'], ['red', 'green', 'deepskyblue', 'gold']],
+[['files'], ['red', 'green', 'deepskyblue', 'gold']],
+[['monitor'], ['red', 'green', 'deepskyblue', 'gold']],
+[['blinds'], ['red', 'green', 'deepskyblue', 'gold']],
+[['memos'], ['red', 'green', 'deepskyblue', 'gold']],
+[['table'], ['red', 'green', 'deepskyblue', 'gold']],
+[['books'], ['red', 'green', 'deepskyblue', 'gold']]]
 
 
-fo_wd_clr_lst1=[[['cake'], ['red', 'green', 'blue', 'black']],
-[['sugar'], ['red', 'green', 'blue', 'black']],
-[['doughnut'], ['red', 'green', 'blue', 'black']],
-[['hamburger'], ['red', 'green', 'blue', 'black']],
-[['chips'], ['red', 'green', 'blue', 'black']],
-[['caramel'], ['red', 'green', 'blue', 'black']],
-[['crisps'], ['red', 'green', 'blue', 'black']],
-[['kebab'], ['red', 'green', 'blue', 'black']],
-[['pizza'], ['red', 'green', 'blue', 'black']],
-[['cream'], ['red', 'green', 'blue', 'black']],
-[['desk'], ['red', 'green', 'blue', 'black']],
-[['ruler'], ['red', 'green', 'blue', 'black']],
-[['scissors'], ['red', 'green', 'blue', 'black']],
-[['envelops'], ['red', 'green', 'blue', 'black']],
-[['files'], ['red', 'green', 'blue', 'black']],
-[['monitor'], ['red', 'green', 'blue', 'black']],
-[['blinds'], ['red', 'green', 'blue', 'black']],
-[['memos'], ['red', 'green', 'blue', 'black']],
-[['table'], ['red', 'green', 'blue', 'black']],
-[['books'], ['red', 'green', 'blue', 'black']]]
+fo_wd_clr_lst1=[[['cake'], ['red', 'green', 'deepskyblue', 'gold']],
+[['sugar'], ['red', 'green', 'deepskyblue', 'gold']],
+[['doughnut'], ['red', 'green', 'deepskyblue', 'gold']],
+[['hamburger'], ['red', 'green', 'deepskyblue', 'gold']],
+[['chips'], ['red', 'green', 'deepskyblue', 'gold']],
+[['caramel'], ['red', 'green', 'deepskyblue', 'gold']],
+[['crisps'], ['red', 'green', 'deepskyblue', 'gold']],
+[['kebab'], ['red', 'green', 'deepskyblue', 'gold']],
+[['pizza'], ['red', 'green', 'deepskyblue', 'gold']],
+[['cream'], ['red', 'green', 'deepskyblue', 'gold']],
+[['desk'], ['red', 'green', 'deepskyblue', 'gold']],
+[['ruler'], ['red', 'green', 'deepskyblue', 'gold']],
+[['scissors'], ['red', 'green', 'deepskyblue', 'gold']],
+[['envelops'], ['red', 'green', 'deepskyblue', 'gold']],
+[['files'], ['red', 'green', 'deepskyblue', 'gold']],
+[['monitor'], ['red', 'green', 'deepskyblue', 'gold']],
+[['blinds'], ['red', 'green', 'deepskyblue', 'gold']],
+[['memos'], ['red', 'green', 'deepskyblue', 'gold']],
+[['table'], ['red', 'green', 'deepskyblue', 'gold']],
+[['books'], ['red', 'green', 'deepskyblue', 'gold']]]
 
 
-nf_wd_clr_lst1=[[['cake'], ['red', 'green', 'blue', 'black']],
-[['sugar'], ['red', 'green', 'blue', 'black']],
-[['doughnut'], ['red', 'green', 'blue', 'black']],
-[['hamburger'], ['red', 'green', 'blue', 'black']],
-[['chips'], ['red', 'green', 'blue', 'black']],
-[['caramel'], ['red', 'green', 'blue', 'black']],
-[['crisps'], ['red', 'green', 'blue', 'black']],
-[['kebab'], ['red', 'green', 'blue', 'black']],
-[['pizza'], ['red', 'green', 'blue', 'black']],
-[['cream'], ['red', 'green', 'blue', 'black']],
-[['desk'], ['red', 'green', 'blue', 'black']],
-[['ruler'], ['red', 'green', 'blue', 'black']],
-[['scissors'], ['red', 'green', 'blue', 'black']],
-[['envelops'], ['red', 'green', 'blue', 'black']],
-[['files'], ['red', 'green', 'blue', 'black']],
-[['monitor'], ['red', 'green', 'blue', 'black']],
-[['blinds'], ['red', 'green', 'blue', 'black']],
-[['memos'], ['red', 'green', 'blue', 'black']],
-[['table'], ['red', 'green', 'blue', 'black']],
-[['books'], ['red', 'green', 'blue', 'black']]]
+nf_wd_clr_lst1=[[['cake'], ['red', 'green', 'deepskyblue', 'gold']],
+[['sugar'], ['red', 'green', 'deepskyblue', 'gold']],
+[['doughnut'], ['red', 'green', 'deepskyblue', 'gold']],
+[['hamburger'], ['red', 'green', 'deepskyblue', 'gold']],
+[['chips'], ['red', 'green', 'deepskyblue', 'gold']],
+[['caramel'], ['red', 'green', 'deepskyblue', 'gold']],
+[['crisps'], ['red', 'green', 'deepskyblue', 'gold']],
+[['kebab'], ['red', 'green', 'deepskyblue', 'gold']],
+[['pizza'], ['red', 'green', 'deepskyblue', 'gold']],
+[['cream'], ['red', 'green', 'deepskyblue', 'gold']],
+[['desk'], ['red', 'green', 'deepskyblue', 'gold']],
+[['ruler'], ['red', 'green', 'deepskyblue', 'gold']],
+[['scissors'], ['red', 'green', 'deepskyblue', 'gold']],
+[['envelops'], ['red', 'green', 'deepskyblue', 'gold']],
+[['files'], ['red', 'green', 'deepskyblue', 'gold']],
+[['monitor'], ['red', 'green', 'deepskyblue', 'gold']],
+[['blinds'], ['red', 'green', 'deepskyblue', 'gold']],
+[['memos'], ['red', 'green', 'deepskyblue', 'gold']],
+[['table'], ['red', 'green', 'deepskyblue', 'gold']],
+[['books'], ['red', 'green', 'deepskyblue', 'gold']]]
 
 
 random.shuffle(eo_wd_clr_lst1)
@@ -304,9 +304,9 @@ color_lst4=create_color_lst(word_color_lst4)
 all_word_lst=word_lst1+word_lst2+word_lst3+word_lst4
 all_color_lst=color_lst1+color_lst2+color_lst3+color_lst4
 
-word_color_lst_all=[[]]*nTrial
+word_color_lst_all=[[]]*nTrial1
 
-for i in range(nTrial):
+for i in range(nTrial1):
     word_color_lst_all[i]=[all_word_lst[i], all_color_lst[i]]
 
 #print(word_color_lst_all)#for debug
@@ -1601,7 +1601,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-practice = data.TrialHandler(nReps=1.0, method='random', 
+practice = data.TrialHandler(nReps=0.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('Practice Trial.xlsx'),
     seed=None, name='practice')
@@ -1770,7 +1770,7 @@ for thisPractice in practice:
     practice.addData('practice_key.stopped', practice_key.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 1.0 repeats of 'practice'
+# completed 0.0 repeats of 'practice'
 
 
 # ------Prepare to start Routine "BeginBaseline"-------
@@ -1881,7 +1881,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-Baseline_trials = data.TrialHandler(nReps=80.0, method='sequential', 
+Baseline_trials = data.TrialHandler(nReps=5.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='Baseline_trials')
@@ -2118,7 +2118,7 @@ for thisBaseline_trial in Baseline_trials:
     Baseline_trials.addData('key_resp.stopped', key_resp.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 80.0 repeats of 'Baseline_trials'
+# completed 5.0 repeats of 'Baseline_trials'
 
 
 # ------Prepare to start Routine "vasInstruction"-------
@@ -2734,7 +2734,7 @@ for thisLoop_for_ct_balance in loop_for_ct_balance:
         
         # ------Prepare to start Routine "preloadVideo"-------
         continueRoutine = True
-        routineTimer.add(0.500000)
+        routineTimer.add(1.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         preloadVideoComponents = [PreloadBackground]
@@ -2770,7 +2770,7 @@ for thisLoop_for_ct_balance in loop_for_ct_balance:
                 PreloadBackground.setAutoDraw(True)
             if PreloadBackground.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > PreloadBackground.tStartRefresh + 0.5-frameTolerance:
+                if tThisFlipGlobal > PreloadBackground.tStartRefresh + 1.0-frameTolerance:
                     # keep track of stop time/frame for later
                     PreloadBackground.tStop = t  # not accounting for scr refresh
                     PreloadBackground.frameNStop = frameN  # exact frame index
@@ -3075,7 +3075,7 @@ for thisLoop_for_ct_balance in loop_for_ct_balance:
         
         # ------Prepare to start Routine "preloadVideo"-------
         continueRoutine = True
-        routineTimer.add(0.500000)
+        routineTimer.add(1.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         preloadVideoComponents = [PreloadBackground]
@@ -3111,7 +3111,7 @@ for thisLoop_for_ct_balance in loop_for_ct_balance:
                 PreloadBackground.setAutoDraw(True)
             if PreloadBackground.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > PreloadBackground.tStartRefresh + 0.5-frameTolerance:
+                if tThisFlipGlobal > PreloadBackground.tStartRefresh + 1.0-frameTolerance:
                     # keep track of stop time/frame for later
                     PreloadBackground.tStop = t  # not accounting for scr refresh
                     PreloadBackground.frameNStop = frameN  # exact frame index
@@ -3416,7 +3416,7 @@ for thisLoop_for_ct_balance in loop_for_ct_balance:
         
         # ------Prepare to start Routine "preloadVideo"-------
         continueRoutine = True
-        routineTimer.add(0.500000)
+        routineTimer.add(1.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         preloadVideoComponents = [PreloadBackground]
@@ -3452,7 +3452,7 @@ for thisLoop_for_ct_balance in loop_for_ct_balance:
                 PreloadBackground.setAutoDraw(True)
             if PreloadBackground.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > PreloadBackground.tStartRefresh + 0.5-frameTolerance:
+                if tThisFlipGlobal > PreloadBackground.tStartRefresh + 1.0-frameTolerance:
                     # keep track of stop time/frame for later
                     PreloadBackground.tStop = t  # not accounting for scr refresh
                     PreloadBackground.frameNStop = frameN  # exact frame index
